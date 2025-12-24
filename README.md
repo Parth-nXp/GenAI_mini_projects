@@ -1,2 +1,5 @@
-# GenAI_mini_projects
-This repository contains small PyTorch experiments focused on Generative AI fundamentals, data preprocessing, model training, evaluation workflows, and hands-on experimentation to build intuition and practical understanding.
+# GenAI Mini Projects
+
+This repository is a collection of small GenAI experiments created for learning and practice. Each experiment focuses on understanding a specific concept such as data loading, model training, evaluation, and experimentation with Generative AI using simple datasets.
+
+1. [Sine Wave Prediction](sine_wave_prediction.ipynb): This mini-project demonstrates a complete time-series prediction pipeline using PyTorch, where an LSTM learns to forecast the next value of a sine signal from a fixed-length history window. It covers synthetic signal generation (sin over a continuous range), sliding-window dataset creation (turning a 1D sequence into supervised samples), and efficient batching via TensorDataset and DataLoader. The model is a compact LSTM-based regressor (sequence encoder + linear head) trained on GPU/CPU using MSELoss and Adam, illustrating how recurrent networks capture temporal dependencies for regression tasks. Training dynamics are tracked using a loss curve, and final performance is visualized by plotting ground-truth vs predicted sine values, making it an intuitive experiment for understanding sequence modeling and next-step forecasting.
